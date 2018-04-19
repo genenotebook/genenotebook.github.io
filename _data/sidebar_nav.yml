@@ -1,0 +1,39 @@
+- name: Introduction
+  subitems:
+  - Intended use
+  - Target audience
+- name: Installation
+  subitems:
+    - Requirements
+    - Configuration
+    - Bundle from source
+    - Prebundled
+    - Bioconda
+    - Docker
+- name: Features
+  subitems:
+    - Genetable
+    - Single gene information sheet
+    - Edit history
+    - BLAST search
+- name: Visualizations
+  subitems:
+    - Gene model
+    - Protein domains
+    - Orthogroup phylogenetic trees
+    - Expression levels
+    - BLAST hits
+- name: Job queue
+  subitems:
+    - Job types
+    - Removing old jobs
+- name: Admin panel
+  subitems:
+    - Users
+    - Reference genomes
+    - Annotation tracks
+    - Transcriptomes
+    - Gene attributes
+    - Job queue
+
+

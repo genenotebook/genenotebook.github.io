@@ -1,0 +1,78 @@
+---
+layout: default
+---
+
+<div class='jumbotron jumbotron-fluid text-center'>
+  <h1 class='text-dark'>GeneNoteBook</h1>
+  <hr />
+  <img class='img-fluid mb-5 d-block mx-auto' src='assets/images/genenotebook.png'/>
+  <hr />
+  <h2>A collaborative notebook for genes and genomes</h2>
+</div>
+<div class='row'>
+  <div class='col-3'>
+    <div class='card'>
+      <div class='card-body'>
+        <h5 class='card-title'>Expression levels</h5>
+      </div>
+      <img class='card-img-bottom' src='assets/images/expression.png' />
+    </div>
+  </div>
+  <div class='col-3'>
+    <div class='card'>
+      <div class='card-body'>
+        <h5 class='card-title'>Gene models</h5>
+      </div>
+      <img class='card-img-bottom' src='assets/images/genemodel.png' />
+    </div>
+  </div>
+  <div class='col-3'>
+    <div class='card'>
+      <div class='card-body'>
+        <h5 class='card-title'>Orthogroups</h5>
+      </div>
+      <img class='card-img-bottom' src='assets/images/orthogroup.png' />
+    </div>
+  </div>
+  <div class='col-3'>
+    <div class='card'>
+      <div class='card-body'>
+        <h5 class='card-title'>Protein domains</h5>
+      </div>
+      <img class='card-img-bottom' src='assets/images/protein-domains.png' />
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>
+-->

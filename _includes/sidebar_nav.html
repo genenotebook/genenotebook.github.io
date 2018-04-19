@@ -1,0 +1,14 @@
+<ol class='list-group'>
+  {% for item in site.data.sidebar_nav %}
+    <li class='list-group-item'>
+      <a href="{{item.name | replace: ' ': '-' | downcase}}">{{item.name}}</a>
+      <ul class='list-group my-0 py-0'>
+        {% for subitem in item.subitems %}
+          <li class='list-group-item my-0 py-0'>
+            <a href="{{item.name | replace: ' ': '-' | downcase}}#{{subitem | replace: ' ': '-' | downcase}}">{{subitem}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ol>
