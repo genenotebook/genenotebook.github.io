@@ -2,44 +2,98 @@
 layout: default
 ---
 
-<div class='jumbotron jumbotron-fluid text-center'>
-  <h1 class='text-dark'>GeneNoteBook</h1>
+<div class='jumbotron my-2 pb-1 pt-4 bg-light border text-center'>
+  <h1 class='text-dark display-4'>GeneNoteBook</h1>
+  <h2 class='text-muted lead'>A collaborative notebook for genes and genomes</h2>
   <hr />
-  <img class='img-fluid mb-5 d-block mx-auto' src='assets/images/genenotebook.png'/>
+  <img class='img-fluid mb-5 d-block mx-auto shadow border' src='assets/images/genenotebook.png'/>
   <hr />
-  <h2>A collaborative notebook for genes and genomes</h2>
+  <div>
+    <h6>Getting started</h6>
+    <ul class='list-group'>
+      <li class='list-group-item'>
+        <a role='button' class='btn btn-outline-primary btn-lg'
+          href='https://github.com/genenotebook/genenotebook/releases/download/v0.1-beta/genenotebook_v0.1-beta.tgz'>
+          Download GeneNoteBook v0.1-beta
+        </a>
+      </li>
+      <li class='list-group-item'>
+        <p class='text-muted lead'>Install dependencies</p>
+        <blockquote class="blockquote">
+          <code>
+            apt-get install nodejs mongodb
+          </code>
+          <footer class="blockquote-footer">
+            Linux
+          </footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <code>
+            brew install nodejs mongodb
+          </code>
+          <footer class="blockquote-footer">
+            OSX
+          </footer>
+        </blockquote>
+      </li>
+      <li class='list-group-item'>
+        <p class='text-muted lead'>Start mongodb daemon</p>
+        <blockquote class="blockquote">
+          <code>
+            mongod
+          </code>
+        </blockquote>
+      </li>
+      <li class='list-group-item'>
+        <p class='text-muted lead'>Start GeneNoteBook</p>
+        <blockquote class="blockquote">
+          <code>
+            genenotebook.sh settings.json
+          </code>
+        </blockquote>
+      </li>
+      <li class='list-group-item'>
+        <p class='text-muted lead'>Load data</p>
+        <blockquote class="blockquote">
+          <code>
+            node scripts/add_reference.js 
+          </code>
+        </blockquote>
+      </li>
+    </ul>
+  </div>
 </div>
 <div class='row'>
   <div class='col-3'>
-    <div class='card'>
+    <div class='card px-2 pb-2'>
       <div class='card-body'>
-        <h5 class='card-title'>Expression levels</h5>
+        <h4 class='card-title lead'>Expression levels</h4>
       </div>
-      <img class='card-img-bottom' src='assets/images/expression.png' />
+      <img class='card-img-bottom shadow' src='assets/images/expression.png' />
     </div>
   </div>
   <div class='col-3'>
-    <div class='card'>
+    <div class='card px-2 pb-2'>
       <div class='card-body'>
-        <h5 class='card-title'>Gene models</h5>
+        <h4 class='card-title lead'>Gene models</h4>
       </div>
-      <img class='card-img-bottom' src='assets/images/genemodel.png' />
+      <img class='card-img-bottom shadow' src='assets/images/genemodel.png' />
     </div>
   </div>
   <div class='col-3'>
-    <div class='card'>
+    <div class='card px-2 pb-2'>
       <div class='card-body'>
-        <h5 class='card-title'>Orthogroups</h5>
+        <h4 class='card-title lead'>Orthogroups</h4>
       </div>
-      <img class='card-img-bottom' src='assets/images/orthogroup.png' />
+      <img class='card-img-bottom shadow' src='assets/images/orthogroup.png' />
     </div>
   </div>
   <div class='col-3'>
-    <div class='card'>
+    <div class='card px-2 pb-2'>
       <div class='card-body'>
-        <h5 class='card-title'>Protein domains</h5>
+        <h4 class='card-title lead'>Protein domains</h4>
       </div>
-      <img class='card-img-bottom' src='assets/images/protein-domains.png' />
+      <img class='card-img-bottom shadow' src='assets/images/protein-domains.png' />
     </div>
   </div>
 </div>
