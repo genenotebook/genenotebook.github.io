@@ -1,0 +1,106 @@
+<section id="installation" class="bg-light">
+  <h1 class='text-dark display-4 pt-2'>Installation</h1>
+  <p class="text-justify-center px-5">
+    Genenotebook requires <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.mongodb.com/">MongoDB</a> and <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">NCBI BLAST</a> to run. <br/>
+    By using either <a href="https://bioconda.github.io/#using-bioconda">bioconda</a> or <a href="https://docs.docker.com/get-started/">docker</a> these dependencies will be installed automatically. <br/>
+    Alternatively, install these dependencies yourself and grab the <a href="https://github.com/genenotebook/genenotebook/releases/">GeneNoteBook tarball from GitHub</a>.
+  </p>
+  <nav>
+    <div class="nav nav-tabs nav-fill px-5" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-bioconda-tab" data-toggle="tab"
+        href="#install-bioconda" role="tab" aria-controls="install-bioconda" aria-selected="true">
+        Bioconda
+      </a>
+      <a class="nav-item nav-link" id="nav-github-tab" data-toggle="tab"
+        href="#install-github" role="tab" aria-controls="install-github" aria-selected="false">
+        Github
+      </a>
+      <a class="nav-item nav-link" id="nav-docker-tab" data-toggle="tab"
+        href="#install-docker" role="tab" aria-controls="install-docker" aria-selected="false">
+        Docker
+      </a>
+    </div>
+  </nav>
+  <div class="tab-content bg-white pt-3" id="nav-tabContent">
+    <div class="tab-pane fade show active text-center" id="install-bioconda" role="tab-panel" 
+      aria-labelledby="nav-bioconda-tab">
+      <img src="assets/images/bioconda-badge-compact.svg" class="img-fluid pl-5" alt="Install using bioconda: conda install -c bioconda genenotebook" />
+    </div>
+    <div class="tab-pane fade" id="install-github" role="tab-panel" 
+      aria-labelledby="nav-github-tab">
+      Install from github
+    </div>
+    <div class="tab-pane fade" id="install-docker" role="tab-panel" 
+      aria-labelledby="nav-docker-tab">
+      Run a docker container
+    </div>
+    <hr class="mb-0" />
+  </div>
+
+  <!--
+  <ul class="nav nav-tabs nav-fill" id="installationOptions" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="bioconda-tab" href="#install-bioconda">Bioconda</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Github tarball</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Docker image</a>
+    </li>
+  </ul>
+-->
+  <!--
+  <ul class='list-group'>
+    <li class='list-group-item'>
+      <a role='button' class='btn btn-outline-primary btn-lg'
+        href='https://github.com/genenotebook/genenotebook/releases/download/v0.1-beta/genenotebook_v0.1-beta.tgz'>
+        Download GeneNoteBook v0.1-beta
+      </a>
+    </li>
+    <li class='list-group-item'>
+      <p class='text-muted lead'>Install dependencies</p>
+      <blockquote class="blockquote">
+        <code>
+          apt-get install nodejs mongodb
+        </code>
+        <footer class="blockquote-footer">
+          Linux
+        </footer>
+      </blockquote>
+      <blockquote class="blockquote">
+        <code>
+          brew install nodejs mongodb
+        </code>
+        <footer class="blockquote-footer">
+          OSX
+        </footer>
+      </blockquote>
+    </li>
+    <li class='list-group-item'>
+      <p class='text-muted lead'>Start mongodb daemon</p>
+      <blockquote class="blockquote">
+        <code>
+          mongod
+        </code>
+      </blockquote>
+    </li>
+    <li class='list-group-item'>
+      <p class='text-muted lead'>Start GeneNoteBook</p>
+      <blockquote class="blockquote">
+        <code>
+          genenotebook.sh settings.json
+        </code>
+      </blockquote>
+    </li>
+    <li class='list-group-item'>
+      <p class='text-muted lead'>Load data</p>
+      <blockquote class="blockquote">
+        <code>
+          node scripts/add_reference.js 
+        </code>
+      </blockquote>
+    </li>
+  </ul>
+-->
+</section>
