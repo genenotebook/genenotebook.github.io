@@ -1,19 +1,20 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>genenotebook 0.1.1-alpha | Documentation</title>
+  <title>genenotebook 0.1.3 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
   <link href='assets/github.css' type='text/css' rel='stylesheet' />
   <link href='assets/split.css' type='text/css' rel='stylesheet' />
+  <meta name='description' content='A portable website for browsing and querying genome sequences and annotations'>
 </head>
 <body class='documentation m0'>
     <div class='flex'>
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>genenotebook</h3>
-          <div class='mb1'><code>0.1.1-alpha</code></div>
+          <div class='mb1'><code>0.1.3</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -64,16 +65,6 @@
               
                 
                 <li><a
-                  href='#mapfunction'
-                  class="">
-                  mapFunction
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
                   href='#db_types'
                   class="">
                   DB_TYPES
@@ -84,9 +75,9 @@
               
                 
                 <li><a
-                  href='#removeblastdb'
+                  href='#mapfunction'
                   class="">
-                  removeBlastDb
+                  mapFunction
                   
                 </a>
                 
@@ -104,9 +95,9 @@
               
                 
                 <li><a
-                  href='#updatetrackpermissions'
+                  href='#removeblastdb'
                   class="">
-                  updateTrackPermissions
+                  removeBlastDb
                   
                 </a>
                 
@@ -117,6 +108,26 @@
                   href='#updatesampleinfo'
                   class="">
                   updateSampleInfo
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#updatetrackpermissions'
+                  class="">
+                  updateTrackPermissions
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#updatereplicagroup'
+                  class="">
+                  updateReplicaGroup
                   
                 </a>
                 
@@ -144,29 +155,19 @@
               
                 
                 <li><a
+                  href='#chunk_size'
+                  class="">
+                  CHUNK_SIZE
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#makeblastdb'
                   class="">
                   makeBlastDb
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#isloading'
-                  class="">
-                  isLoading
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#isloading'
-                  class="">
-                  isLoading
                   
                 </a>
                 
@@ -184,9 +185,49 @@
               
                 
                 <li><a
-                  href='#round'
+                  href='#updategenome'
                   class="">
-                  round
+                  updateGenome
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#debugformatattributes'
+                  class="">
+                  debugFormatAttributes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isloading'
+                  class="">
+                  isLoading
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#isloading'
+                  class="">
+                  isLoading
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#seqpart'
+                  class="">
+                  SeqPart
                   
                 </a>
                 
@@ -204,9 +245,9 @@
               
                 
                 <li><a
-                  href='#tablecolumndatatracker'
+                  href='#'
                   class="">
-                  tableColumnDataTracker
+                  
                   
                 </a>
                 
@@ -224,59 +265,39 @@
               
                 
                 <li><a
-                  href='#reversecomplement'
-                  class="">
-                  reverseComplement
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#datatracker'
-                  class="">
-                  dataTracker
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#loading'
-                  class="">
-                  Loading
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#loading'
-                  class="">
-                  Loading
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#interval'
-                  class="">
-                  Interval
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
                   href='#reducefunction'
                   class="">
                   reduceFunction
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#loading'
+                  class="">
+                  Loading
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#loading'
+                  class="">
+                  Loading
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#attributetracker'
+                  class="">
+                  attributeTracker
                   
                 </a>
                 
@@ -294,9 +315,9 @@
               
                 
                 <li><a
-                  href='#translate'
+                  href='#interval'
                   class="">
-                  translate
+                  Interval
                   
                 </a>
                 
@@ -314,19 +335,9 @@
               
                 
                 <li><a
-                  href='#withconditionalrendering'
+                  href='#translate'
                   class="">
-                  withConditionalRendering
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#withconditionalrendering'
-                  class="">
-                  withConditionalRendering
+                  translate
                   
                 </a>
                 
@@ -344,6 +355,40 @@
               
                 
                 <li><a
+                  href='#lineprocessor'
+                  class=" toggle-sibling">
+                  LineProcessor
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#lineprocessorprocess'
+                        class='regular pre-open'>
+                        #process
+                      </a></li>
+                      
+                      <li><a
+                        href='#lineprocessorfinalize'
+                        class='regular pre-open'>
+                        #finalize
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
                   href='#sequenceinput'
                   class="">
                   SequenceInput
@@ -354,9 +399,9 @@
               
                 
                 <li><a
-                  href='#genetableoptions'
+                  href='#reversecomplement'
                   class="">
-                  GeneTableOptions
+                  reverseComplement
                   
                 </a>
                 
@@ -364,9 +409,9 @@
               
                 
                 <li><a
-                  href='#hasnoresults'
+                  href='#formatdate'
                   class="">
-                  hasNoResults
+                  formatDate
                   
                 </a>
                 
@@ -374,9 +419,19 @@
               
                 
                 <li><a
-                  href='#noresults'
+                  href='#orthogrouptipnode'
                   class="">
-                  NoResults
+                  OrthogroupTipNode
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#searchtracker'
+                  class="">
+                  searchTracker
                   
                 </a>
                 
@@ -394,9 +449,39 @@
               
                 
                 <li><a
+                  href='#hasnoresults'
+                  class="">
+                  hasNoResults
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#lockgene'
                   class="">
                   lockGene
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#noresults'
+                  class="">
+                  NoResults
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#genelinkdatatracker'
+                  class="">
+                  geneLinkDataTracker
                   
                 </a>
                 
@@ -414,9 +499,29 @@
               
                 
                 <li><a
+                  href='#round'
+                  class="">
+                  round
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#unlockgene'
                   class="">
                   unlockGene
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#genetable'
+                  class="">
+                  GeneTable
                   
                 </a>
                 
@@ -434,29 +539,9 @@
               
                 
                 <li><a
-                  href='#getmultiplegenesequences'
-                  class="">
-                  getMultipleGeneSequences
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
                   href='#queryfromlabel'
                   class="">
                   queryFromLabel
-                  
-                </a>
-                
-                </li>
-              
-                
-                <li><a
-                  href='#blastresult'
-                  class="">
-                  BlastResult
                   
                 </a>
                 
@@ -474,6 +559,36 @@
               
                 
                 <li><a
+                  href='#fastafiletomongodb'
+                  class="">
+                  fastaFileToMongoDb
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#blastresult'
+                  class="">
+                  BlastResult
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#withconditionalrendering'
+                  class="">
+                  withConditionalRendering
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
                   href='#headerelement'
                   class="">
                   HeaderElement
@@ -484,9 +599,9 @@
               
                 
                 <li><a
-                  href='#genetablerow'
+                  href='#gfffiletomongodb'
                   class="">
-                  GeneTableRow
+                  gffFileToMongoDb
                   
                 </a>
                 
@@ -504,9 +619,19 @@
               
                 
                 <li><a
-                  href='#getreferencesequences'
+                  href='#genemodelgroup'
                   class="">
-                  getReferenceSequences
+                  GenemodelGroup
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#genetablerow'
+                  class="">
+                  GeneTableRow
                   
                 </a>
                 
@@ -532,7 +657,7 @@
       <div id='split-right' class='relative overflow-auto height-viewport-100'>
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -547,8 +672,10 @@
 
   <p>Format gff3 attribute column into key:value object.</p>
 
-
-  <div class='pre p1 fill-light mt0'>formatAttributes</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>formatAttributes</div>
+   
   
   
 
@@ -598,10 +725,9 @@
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -617,8 +743,10 @@
   <p>Higher order component for conditional rendering, to be used with compose
 <a href="https://www.robinwieruch.de/gentle-introduction-higher-order-components/">https://www.robinwieruch.de/gentle-introduction-higher-order-components/</a></p>
 
-
-  <div class='pre p1 fill-light mt0'>withEither</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>withEither</div>
+   
   
   
 
@@ -677,10 +805,9 @@
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -695,8 +822,10 @@
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>SelectionOptions</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>SelectionOptions</div>
+   
   
   
 
@@ -768,9 +897,7 @@
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function">Function</a></code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -787,10 +914,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -805,8 +931,10 @@ description
 
   <p>hasBlastDb validated method: checks whether blast databases exist for a given annotation track</p>
 
-
-  <div class='pre p1 fill-light mt0'>hasBlastDb</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>hasBlastDb</div>
+   
   
   
 
@@ -842,57 +970,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='mapfunction'>
-      mapFunction
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>Map function for mongodb mapreduce</p>
-
-
-  <div class='pre p1 fill-light mt0'>mapFunction</div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -907,8 +987,10 @@ description
 
   <p>Keep track of what blast commands should use which databases</p>
 
-
-  <div class='pre p1 fill-light mt0'>DB_TYPES</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>DB_TYPES</div>
+   
   
     <p>
       Type:
@@ -941,10 +1023,127 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='mapfunction'>
+      mapFunction
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Map function for mongodb mapreduce</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>mapFunction</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='revcomp'>
+      revcomp
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Reverse complement a DNA string</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>revcomp</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>seq</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    [String representing DNA constisting of alphabet AaCcGgTtNn]
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        [String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement of input]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -959,8 +1158,10 @@ description
 
   <p>hasBlastDb validated method: checks whether blast databases exist for a given annotation track</p>
 
-
-  <div class='pre p1 fill-light mt0'>removeBlastDb</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>removeBlastDb</div>
+   
   
   
 
@@ -996,138 +1197,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='revcomp'>
-      revcomp
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>Reverse complement a DNA string</p>
-
-
-  <div class='pre p1 fill-light mt0'>revcomp</div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>seq</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
-	    [
-String representing DNA constisting of alphabet AaCcGgTtNn
-]
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
-        [
-String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement of input
-]
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='updatetrackpermissions'>
-      updateTrackPermissions
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>submitBlastJob validated method: submits makeblastdb job to jobqueue, call this from the client</p>
-
-
-  <div class='pre p1 fill-light mt0'>updateTrackPermissions</div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
-        jobId of the makeblastdb job
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1142,8 +1214,10 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
 
   <p>updateSampleInfo validated method: Update transcriptome information and groups</p>
 
-
-  <div class='pre p1 fill-light mt0'>updateSampleInfo</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>updateSampleInfo</div>
+   
   
   
 
@@ -1179,10 +1253,121 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='updatetrackpermissions'>
+      updateTrackPermissions
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>submitBlastJob validated method: submits makeblastdb job to jobqueue, call this from the client</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>updateTrackPermissions</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        jobId of the makeblastdb job
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='updatereplicagroup'>
+      updateReplicaGroup
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>updateReplicaGroup validated method: Update transcriptome information and groups</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>updateReplicaGroup</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        jobId of the makeblastdb job
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1197,8 +1382,10 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
 
   <p>[QUERY_TYPES description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>QUERY_TYPES</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>QUERY_TYPES</div>
+   
   
     <p>
       Type:
@@ -1231,10 +1418,9 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1249,8 +1435,10 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
 
   <p>submitBlastJob validated method: submits makeblastdb job to jobqueue, call this from the client</p>
 
-
-  <div class='pre p1 fill-light mt0'>submitBlastJob</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>submitBlastJob</div>
+   
   
   
 
@@ -1286,10 +1474,62 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='chunk_size'>
+      CHUNK_SIZE
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Chunk size into which DNA sequences are inserted into the database</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>CHUNK_SIZE</div>
+   
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1304,8 +1544,10 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
 
   <p>makeBlastDb validated method: submits makeblastdb job to jobqueue, call this from the client</p>
 
-
-  <div class='pre p1 fill-light mt0'>makeBlastDb</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>makeBlastDb</div>
+   
   
   
 
@@ -1341,10 +1583,281 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='formatfasta'>
+      formatFasta
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>formatFasta description</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>formatFasta(query: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, sequenceType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>query</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    Database query to select genes
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>sequenceType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    One of 'protein' or 'nucleotide'
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
+        Array of fasta formatted coding sequences
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='updategenome'>
+      updateGenome
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>[ValidatedMethod description]</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>updateGenome</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>name</span> <code class='quiet'>([type])</code>
+	    :             {             type:           String    }           
+[description]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>organism</span> <code class='quiet'>([type])</code>
+	    :         {             type:           String    }           
+[description]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>description</span> <code class='quiet'>([type])</code>
+	    :      {             type:           String    }           
+[description]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>permissions</span> <code class='quiet'>([type])</code>
+	    :      {             type:           Array     }           
+[description]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>null</span> <code class='quiet'>([type])</code>
+	    'permissions.$':  {             type:           String}               }).validator() 
+[description]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>applyOptions</span> <code class='quiet'>([type])</code>
+	    :     {                                                    noRetry:        true             }    
+[description]
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>run</span> <code class='quiet'>([type])</code>
+	    ({            _id,           name,           organism, description, permissions     }){                                if            (! this.userId) {      throw new Meteor.Error('not-authorized');    }    if (! Roles.userIsInRole(this.userId, 'admin') 
+[description]
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='debugformatattributes'>
+      debugFormatAttributes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Debug formatting gff3 attribute column by logging intermediate steps to console</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>debugFormatAttributes</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>attributeString</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    Raw gff3 attribute column string
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        Key:value pairs of attributes.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1359,8 +1872,10 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
 
   <p>Helper function to see if reactive dataTracker is still loading</p>
 
-
-  <div class='pre p1 fill-light mt0'>isLoading</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>isLoading</div>
+   
   
   
 
@@ -1433,10 +1948,9 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1451,8 +1965,10 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>isLoading</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>isLoading</div>
+   
   
   
 
@@ -1516,9 +2032,7 @@ String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement o
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -1535,26 +2049,28 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='formatfasta'>
-      formatFasta
+    <h3 class='fl m0' id='seqpart'>
+      SeqPart
     </h3>
     
     
   </div>
   
 
-  <p>formatFasta description</p>
+  <p>Small data Class to keep track of current sequence position during fasta line parsing
+Can be initialized empty and subsequently updated</p>
 
-
-  <div class='pre p1 fill-light mt0'>formatFasta(query: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>, sequenceType: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>new SeqPart($0: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+   
   
   
 
@@ -1571,19 +2087,65 @@ description
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>query</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    Database query to select genes
-
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
           </div>
           
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>sequenceType</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
-	    One of 'protein' or 'nucleotide'
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.seq</span> <code class='quiet'>any</code>
+  
+    (default <code>&#39;&#39;</code>)
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
 
-          </div>
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.header</span> <code class='quiet'>any</code>
+  
+    (default <code>&#39;&#39;</code>)
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.start</span> <code class='quiet'>any</code>
+  
+    (default <code>0</code>)
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.end</span> <code class='quiet'>any</code>
+  
+    (default <code>0</code>)
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
           
         </div>
       
@@ -1592,14 +2154,6 @@ description
 
   
 
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        Array of fasta formatted coding sequences
-
-      
-    
   
 
   
@@ -1613,88 +2167,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='round'>
-      round
-    </h3>
-    
-    
-  </div>
-  
-
-  <p><a href="https://stackoverflow.com/a/46854785/6573438">https://stackoverflow.com/a/46854785/6573438</a></p>
-
-
-  <div class='pre p1 fill-light mt0'>round</div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>x</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    Number to be rounded
-
-          </div>
-          
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>n</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
-	    Floating point precision
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
-        Rounded Number
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1709,8 +2184,10 @@ description
 
   <p>Function to determine whether a given sequence string is DNA or protein</p>
 
-
-  <div class='pre p1 fill-light mt0'>determineSeqType(seq: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>determineSeqType(seq: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+   
   
   
 
@@ -1760,52 +2237,37 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='tablecolumndatatracker'>
-      tableColumnDataTracker
+    <h3 class='fl m0' id=''>
+      
     </h3>
     
     
   </div>
   
 
-  <p>[description]</p>
+  <p>Reactive Meteor tracker for GeneTable component</p>
 
-
-  <div class='pre p1 fill-light mt0'>tableColumnDataTracker</div>
+ 
   
-  
-
-  
-  
-  
-  
+    <div class='pre p1 fill-light mt0'></div>
+   
   
   
 
   
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>props</span> <code class='quiet'>([type])</code>
-	    [
-description
-]
+  
+  
+  
+  
+  
 
-          </div>
-          
-        </div>
-      
-    </div>
   
 
   
@@ -1813,10 +2275,8 @@ description
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>[type]</code>:
-        [
-description
-]
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        [description]
 
       
     
@@ -1833,10 +2293,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -1851,8 +2310,10 @@ description
 
   <p>Override the default querystring unescape function to be able to parse commas correctly in gff attributes</p>
 
-
-  <div class='pre p1 fill-light mt0'>unescape(uri: any, String: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>unescape(uri: any, String: any): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+   
   
   
 
@@ -1909,26 +2370,27 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='reversecomplement'>
-      reverseComplement
+    <h3 class='fl m0' id='reducefunction'>
+      reduceFunction
     </h3>
     
     
   </div>
   
 
-  <p>Reverse complement a DNA string</p>
+  <p>Reduce function for mongodb mapreduce</p>
 
-
-  <div class='pre p1 fill-light mt0'>reverseComplement</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>reduceFunction</div>
+   
   
   
 
@@ -1945,134 +2407,19 @@ description
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>seq</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
-	    String representing DNA constisting of alphabet AaCcGgTtNn
+            <span class='code bold'>_key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    [description]
 
           </div>
           
         </div>
       
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
-        String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement of input
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='datatracker'>
-      dataTracker
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>Reactive Meteor tracker for GeneTable component</p>
-
-
-  <div class='pre p1 fill-light mt0'>dataTracker</div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    
+            <span class='code bold'>values</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
+	    [description]
+
           </div>
-          
-          <table class='mt1 mb2 fixed-table h5 col-12'>
-            <colgroup>
-              <col width='30%' />
-              <col width='70%' />
-            </colgroup>
-            <thead>
-              <tr class='bold fill-light'>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody class='mt1'>
-              
-                <tr>
-  <td class='break-word'><span class='code bold'>$0.query</span> <code class='quiet'>any</code>
-  </td>
-  <td class='break-word'><span></span></td>
-</tr>
-
-
-              
-                <tr>
-  <td class='break-word'><span class='code bold'>$0.scrollLimit</span> <code class='quiet'>any</code>
-  </td>
-  <td class='break-word'><span></span></td>
-</tr>
-
-
-              
-                <tr>
-  <td class='break-word'><span class='code bold'>$0.selectedGenes</span> <code class='quiet'>any</code>
-  </td>
-  <td class='break-word'><span></span></td>
-</tr>
-
-
-              
-                <tr>
-  <td class='break-word'><span class='code bold'>$0.updateSelection</span> <code class='quiet'>any</code>
-  </td>
-  <td class='break-word'><span></span></td>
-</tr>
-
-
-              
-                <tr>
-  <td class='break-word'><span class='code bold'>$0.selectedAll</span> <code class='quiet'>any</code>
-  </td>
-  <td class='break-word'><span></span></td>
-</tr>
-
-
-              
-            </tbody>
-          </table>
           
         </div>
       
@@ -2085,9 +2432,7 @@ description
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -2104,10 +2449,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2122,8 +2466,10 @@ description
 
   <p>Simple React Loading component</p>
 
-
-  <div class='pre p1 fill-light mt0'>Loading</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>Loading</div>
+   
   
   
 
@@ -2159,10 +2505,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2177,8 +2522,10 @@ description
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>Loading</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>Loading</div>
+   
   
   
 
@@ -2242,9 +2589,7 @@ description
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -2261,78 +2606,27 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='interval'>
-      Interval
+    <h3 class='fl m0' id='attributetracker'>
+      attributeTracker
     </h3>
     
     
   </div>
   
 
-  <p>Interval Class containing a single genomic interval. Every line in a gff3 file is an interval</p>
+  <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>Interval</div>
+ 
   
-    <p>
-      Type:
-      <a href="#interval">Interval</a>
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='reducefunction'>
-      reduceFunction
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>Reduce function for mongodb mapreduce</p>
-
-
-  <div class='pre p1 fill-light mt0'>reduceFunction</div>
+    <div class='pre p1 fill-light mt0'>attributeTracker</div>
+   
   
   
 
@@ -2349,23 +2643,42 @@ description
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>_key</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
-	    [
-description
-]
+            <span class='code bold'>props</span> <code class='quiet'>([type])</code>
+	    [description]
 
           </div>
           
-        </div>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>values</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>)</code>
-	    [
-description
-]
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.searchAttributes</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
 
-          </div>
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.searchValue</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
           
         </div>
       
@@ -2377,10 +2690,8 @@ description
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        [
-description
-]
+      <code>[type]</code>:
+        [description]
 
       
     
@@ -2397,10 +2708,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2415,8 +2725,10 @@ description
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>labelFromQuery</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>labelFromQuery</div>
+   
   
   
 
@@ -2480,9 +2792,7 @@ description
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -2499,10 +2809,62 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='interval'>
+      Interval
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Interval Class containing a single genomic interval. Every line in a gff3 file is an interval</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>Interval</div>
+   
+  
+    <p>
+      Type:
+      <a href="#interval">Interval</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2517,8 +2879,10 @@ description
 
   <p>Convert a DNA string into a amino acid string</p>
 
-
-  <div class='pre p1 fill-light mt0'>translate</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>translate</div>
+   
   
   
 
@@ -2568,10 +2932,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2586,8 +2949,10 @@ description
 
   <p>Convert a DNA string into a amino acid string</p>
 
-
-  <div class='pre p1 fill-light mt0'>translate</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>translate</div>
+   
   
   
 
@@ -2637,114 +3002,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='withconditionalrendering'>
-      withConditionalRendering
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>[withConditionalRendering description]</p>
-
-
-  <div class='pre p1 fill-light mt0'>withConditionalRendering</div>
-  
-    <p>
-      Type:
-      [type]
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='withconditionalrendering'>
-      withConditionalRendering
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>[withConditionalRendering description]</p>
-
-
-  <div class='pre p1 fill-light mt0'>withConditionalRendering</div>
-  
-    <p>
-      Type:
-      [type]
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2761,8 +3021,10 @@ description
 Otherwise use the cached file and increment the download count.
 Return md5 hash of download query as download url</p>
 
-
-  <div class='pre p1 fill-light mt0'>log</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>log</div>
+   
   
   
 
@@ -2790,10 +3052,239 @@ Return md5 hash of download query as download url</p>
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='lineprocessor'>
+      LineProcessor
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Class to keep track of state during parsing of fasta files.
+Typically genome sequences are formatted as fasta files with the DNA per
+fasta entry divided over multiple lines.
+This class keeps track of where we are during file parsing and adds a bulk insertion
+job once we have parsed more thank CHUNK_SIZE basepairs.
+When parsing is finished the finalize method cleans up and executes the bulk operation.</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>new LineProcessor($0: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.genomeId</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.permissions</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='lineprocessorprocess'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>process</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Process a fasta formatted line</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>process</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>line</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    [description]
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>None</code>:
+        
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='lineprocessorfinalize'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>finalize</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+
+  <p>Adds the remaining sequence as a bulk insertion job and executes the bulk operation</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>finalize</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>[type]</code>:
+        [description]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -2808,8 +3299,10 @@ Return md5 hash of download query as download url</p>
 
   <p>Textarea input field to input sequences for blasting</p>
 
-
-  <div class='pre p1 fill-light mt0'>SequenceInput</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>SequenceInput</div>
+   
   
   
 
@@ -2827,9 +3320,7 @@ Return md5 hash of download query as download url</p>
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>props</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    [
-description
-]
+	    [description]
 
           </div>
           
@@ -2844,9 +3335,7 @@ description
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code><a href="#sequenceinput">SequenceInput</a></code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -2863,33 +3352,28 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='genetableoptions'>
-      GeneTableOptions
+    <h3 class='fl m0' id='reversecomplement'>
+      reverseComplement
     </h3>
     
     
   </div>
   
 
-  
+  <p>Reverse complement a DNA string</p>
 
-  <div class='pre p1 fill-light mt0'>new GeneTableOptions(props: any)</div>
+ 
   
+    <div class='pre p1 fill-light mt0'>reverseComplement</div>
+   
   
-    <p>
-      Extends
-      
-        React.PureComponent
-      
-    </p>
   
 
   
@@ -2905,8 +3389,9 @@ description
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>props</span> <code class='quiet'>(any)</code>
-	    
+            <span class='code bold'>seq</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    String representing DNA constisting of alphabet AaCcGgTtNn
+
           </div>
           
         </div>
@@ -2917,6 +3402,14 @@ description
   
 
   
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        String representing DNA constisting of alphabet AaCcGgTtNn, reverse complement of input
+
+      
+    
+  
 
   
 
@@ -2929,16 +3422,15 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='hasnoresults'>
-      hasNoResults
+    <h3 class='fl m0' id='formatdate'>
+      formatDate
     </h3>
     
     
@@ -2947,8 +3439,10 @@ description
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>hasNoResults</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>formatDate</div>
+   
   
   
 
@@ -2965,10 +3459,8 @@ description
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>props</span> <code class='quiet'>([type])</code>
-	    [
-description
-]
+            <span class='code bold'>date</span> <code class='quiet'>([type])</code>
+	    [description]
 
           </div>
           
@@ -2983,9 +3475,7 @@ description
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -3002,16 +3492,124 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='noresults'>
-      NoResults
+    <h3 class='fl m0' id='orthogrouptipnode'>
+      OrthogroupTipNode
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Orthogroup phylogenetic tree tipnode with reactive data link for genes in the database</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>OrthogroupTipNode</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.transcriptId</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.gene</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.x</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.y</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='searchtracker'>
+      searchTracker
     </h3>
     
     
@@ -3020,8 +3618,189 @@ description
 
   <p>[description]</p>
 
+ 
+  
+    <div class='pre p1 fill-light mt0'>searchTracker</div>
+   
+  
+  
 
-  <div class='pre p1 fill-light mt0'>NoResults</div>
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.attributes</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.searchAttributes</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.searchValue</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>[type]</code>:
+        [description]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='statefromquery'>
+      stateFromQuery
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>[description]</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>stateFromQuery</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>query</span> <code class='quiet'>([type])</code>
+	    [description]
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>[type]</code>:
+        [description]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='hasnoresults'>
+      hasNoResults
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>[description]</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>hasNoResults</div>
+   
   
   
 
@@ -3039,9 +3818,171 @@ description
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>props</span> <code class='quiet'>([type])</code>
-	    [
-description
-]
+	    [description]
+
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>props.genes</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>[type]</code>:
+        [description]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='lockgene'>
+      lockGene
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>If a gene is being edited it is locked so other users can not edit it as well.</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>lockGene(geneId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>geneId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    Gene ID of the gene that should be locked for editing
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
+        No return value
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='noresults'>
+      NoResults
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>[description]</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>NoResults</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>([type])</code>
+	    [description]
 
           </div>
           
@@ -3088,9 +4029,7 @@ description
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -3107,16 +4046,15 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='statefromquery'>
-      stateFromQuery
+    <h3 class='fl m0' id='genelinkdatatracker'>
+      geneLinkDataTracker
     </h3>
     
     
@@ -3125,8 +4063,10 @@ description
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>stateFromQuery</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>geneLinkDataTracker</div>
+   
   
   
 
@@ -3143,12 +4083,41 @@ description
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>query</span> <code class='quiet'>([type])</code>
-	    [
-description
-]
-
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
           </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.data</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.props</span> <code class='quiet'>...any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
           
         </div>
       
@@ -3160,10 +4129,8 @@ description
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>[type]</code>:
-        [
-description
-]
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        [description]
 
       
     
@@ -3180,79 +4147,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='lockgene'>
-      lockGene
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>If a gene is being edited it is locked so other users can not edit it as well.</p>
-
-
-  <div class='pre p1 fill-light mt0'>lockGene(geneId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>geneId</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
-	    Gene ID of the gene that should be locked for editing
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></code>:
-        No return value
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -3267,8 +4164,10 @@ description
 
   <p>Genemodel Class containing all intervals for a single gene.</p>
 
-
-  <div class='pre p1 fill-light mt0'>GeneModel</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>GeneModel</div>
+   
   
     <p>
       Type:
@@ -3301,10 +4200,88 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='round'>
+      round
+    </h3>
+    
+    
+  </div>
+  
+
+  <p><a href="https://stackoverflow.com/a/46854785/6573438">https://stackoverflow.com/a/46854785/6573438</a></p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>round</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>x</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    Number to be rounded
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>n</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    Floating point precision
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        Rounded Number
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -3320,8 +4297,10 @@ description
   <p>This unlocks a gene from being blocked during editing.
 A gene should only be unlocked by the person that locked it</p>
 
-
-  <div class='pre p1 fill-light mt0'>unlockGene(geneId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>unlockGene(geneId: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined">undefined</a></div>
+   
   
   
 
@@ -3371,10 +4350,86 @@ A gene should only be unlocked by the person that locked it</p>
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='genetable'>
+      GeneTable
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Dynamic table for displaying gene information with columns that can be queried and configured</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>new GeneTable(props: any, attributes: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>?)</div>
+   
+  
+  
+    <p>
+      Extends
+      
+        React.PureComponent
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>props</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>attributes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">array</a>?)</code>
+	    array of gene attributes that will be shown as columns
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -3389,8 +4444,10 @@ A gene should only be unlocked by the person that locked it</p>
 
   <p>Meteor reactive data tracker to fetch blast job results based on url</p>
 
-
-  <div class='pre p1 fill-light mt0'>blastDataTracker(props: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>blastDataTracker(props: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></div>
+   
   
   
 
@@ -3440,80 +4497,9 @@ A gene should only be unlocked by the person that locked it</p>
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='getmultiplegenesequences'>
-      getMultipleGeneSequences
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>Get nucleotide and protein sequences of all transcripts for a multiple genes (using CDS subfeatures)</p>
-
-
-  <div class='pre p1 fill-light mt0'>getMultipleGeneSequences</div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>genes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;gene>)</code>
-	    Array of Object representing gene-models
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a></code>:
-        Array with objects, where each object has a transcriptId,
-nucleotide sequence and protein sequence field
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -3528,8 +4514,10 @@ nucleotide sequence and protein sequence field
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>queryFromLabel</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>queryFromLabel</div>
+   
   
   
 
@@ -3564,7 +4552,15 @@ nucleotide sequence and protein sequence field
             <tbody class='mt1'>
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.queryLabel</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>$0.queryLabel.label</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.queryLabel.value</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -3593,9 +4589,7 @@ nucleotide sequence and protein sequence field
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -3612,63 +4606,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='blastresult'>
-      BlastResult
-    </h3>
-    
-    
-  </div>
-  
-
-  
-
-  <div class='pre p1 fill-light mt0'>new BlastResult()</div>
-  
-  
-    <p>
-      Extends
-      
-        React.Component
-      
-    </p>
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -3683,8 +4623,10 @@ description
 
   <p>Get nucleotide and protein sequences of all transcripts for a single gene (using CDS subfeatures)</p>
 
-
-  <div class='pre p1 fill-light mt0'>getGeneSequences</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>getGeneSequences</div>
+   
   
   
 
@@ -3735,10 +4677,217 @@ nucleotide sequence and protein sequence field
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='fastafiletomongodb'>
+      fastaFileToMongoDb
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>[description]</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>fastaFileToMongoDb</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.fileName</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.genomeName</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></code>:
+        [description]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='blastresult'>
+      BlastResult
+    </h3>
+    
+    
+  </div>
+  
+
+  
+ 
+  
+    <div class='pre p1 fill-light mt0'>new BlastResult()</div>
+   
+  
+  
+    <p>
+      Extends
+      
+        React.Component
+      
+    </p>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='withconditionalrendering'>
+      withConditionalRendering
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>[withConditionalRendering description]</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>withConditionalRendering</div>
+   
+  
+    <p>
+      Type:
+      [type]
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -3752,8 +4901,10 @@ nucleotide sequence and protein sequence field
   
 
   
-
-  <div class='pre p1 fill-light mt0'>new HeaderElement(props: any)</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>new HeaderElement(props: any)</div>
+   
   
   
     <p>
@@ -3801,10 +4952,288 @@ nucleotide sequence and protein sequence field
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='gfffiletomongodb'>
+      gffFileToMongoDb
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>[description]</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>gffFileToMongoDb</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.fileName</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.genomeId</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.strict</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a></code>:
+        [description]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='blasttypes'>
+      BLASTTYPES
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Hard coded map of sequence types to blast database types to select the appropriate blast program</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>BLASTTYPES</div>
+   
+  
+    <p>
+      Type:
+      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
+    </p>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='genemodelgroup'>
+      GenemodelGroup
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>GenemodelGroup</p>
+
+ 
+  
+    <div class='pre p1 fill-light mt0'>GenemodelGroup</div>
+   
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
+	    
+          </div>
+          
+          <table class='mt1 mb2 fixed-table h5 col-12'>
+            <colgroup>
+              <col width='30%' />
+              <col width='70%' />
+            </colgroup>
+            <thead>
+              <tr class='bold fill-light'>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody class='mt1'>
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.gene</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.transcripts</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.width</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
+  <td class='break-word'><span class='code bold'>$0.scale</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+            </tbody>
+          </table>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>[type]</code>:
+        [description]
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -3819,8 +5248,10 @@ nucleotide sequence and protein sequence field
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>GeneTableRow</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>GeneTableRow</div>
+   
   
   
 
@@ -3903,6 +5334,14 @@ nucleotide sequence and protein sequence field
 
               
                 <tr>
+  <td class='break-word'><span class='code bold'>$0.selectedVisualization</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
   <td class='break-word'><span class='code bold'>$0.props</span> <code class='quiet'>...any</code>
   </td>
   <td class='break-word'><span></span></td>
@@ -3924,9 +5363,7 @@ nucleotide sequence and protein sequence field
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -3943,131 +5380,9 @@ description
   
 </section>
 
-          
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='blasttypes'>
-      BLASTTYPES
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>Hard coded map of sequence types to blast database types to select the appropriate blast program</p>
-
-
-  <div class='pre p1 fill-light mt0'>BLASTTYPES</div>
-  
-    <p>
-      Type:
-      <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>
-    </p>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
-
-  
-  <div class='clearfix'>
-    
-    <h3 class='fl m0' id='getreferencesequences'>
-      getReferenceSequences
-    </h3>
-    
-    
-  </div>
-  
-
-  <p>Retrieve</p>
-
-
-  <div class='pre p1 fill-light mt0'>getReferenceSequences</div>
-  
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-    <div class='py1 quiet mt1 prose-big'>Parameters</div>
-    <div class='prose'>
-      
-        <div class='space-bottom0'>
-          <div>
-            <span class='code bold'>referenceName</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
-	    Reference sequence name
-
-          </div>
-          
-        </div>
-      
-    </div>
-  
-
-  
-
-  
-    
-      <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
-        Object with all sequences belonging to a reference. Keys are header and values are DNA sequence strings
-
-      
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-</section>
-
-          
-        
-          
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -4082,8 +5397,10 @@ description
 
   <p>[description]</p>
 
-
-  <div class='pre p1 fill-light mt0'>GeneTableHeader</div>
+ 
+  
+    <div class='pre p1 fill-light mt0'>GeneTableHeader</div>
+   
   
   
 
@@ -4158,6 +5475,14 @@ description
 
               
                 <tr>
+  <td class='break-word'><span class='code bold'>$0.selectedVisualization</span> <code class='quiet'>any</code>
+  </td>
+  <td class='break-word'><span></span></td>
+</tr>
+
+
+              
+                <tr>
   <td class='break-word'><span class='code bold'>$0.props</span> <code class='quiet'>...any</code>
   </td>
   <td class='break-word'><span></span></td>
@@ -4179,9 +5504,7 @@ description
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
       <code>[type]</code>:
-        [
-description
-]
+        [description]
 
       
     
@@ -4198,7 +5521,6 @@ description
   
 </section>
 
-          
         
       </div>
     </div>

@@ -1,0 +1,89 @@
+<section id='loading-data'>
+  <h1 class='text-dark display-6 pt-2'>Loading data</h1>
+  <p>
+    Once a GeneNoteBook server is running data can be added with the following commands:
+  </p>
+  <nav>
+    <div class="nav nav-tabs nav-fill px-5" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-genome-tab" data-toggle="tab"
+        href="#genome-annotations" role="tab" aria-controls="genome-annotations" 
+        aria-selected="true">
+        Genome annotations
+      </a>
+      <a class="nav-item nav-link" id="nav-interproscan-tab" data-toggle="tab"
+        href="#interproscan" role="tab" aria-controls="interproscan" aria-selected="false">
+        InterProScan 
+      </a>
+      <a class="nav-item nav-link" id="nav-orthogroups-tab" data-toggle="tab"
+        href="#orthogroups" role="tab" aria-controls="orthogroups" 
+        aria-selected="false">
+        Orthogroups
+      </a>
+      <a class="nav-item nav-link" id="nav-gene-expression-tab" data-toggle="tab"
+        href="#gene-expression" role="tab" aria-controls="gene-expression" 
+        aria-selected="false">
+        Gene expression
+      </a>
+    </div>
+  </nav>
+  <div class="tab-content bg-white pt-3" id="nav-tabContent">
+
+    <div class="tab-pane fade show active mt-3 pb-3" id="genome-annotations" role="tab-panel" 
+      aria-labelledby="nav-genome-tab">
+      <div style='max-width:700px; margin:auto'>
+        First add the reference genome:
+        <blockquote class='blockquote bg-dark mt-2'>
+          <code class='text-light'>
+            > genenotebook add genome -u &lt;username&gt; -p &lt;password&gt; <br/>
+            -n &lt;genome_name&gt; &lt;genome.fasta&gt;
+          </code>
+        </blockquote>
+        Then add the corresponding genome annotation:
+        <blockquote class='blockquote bg-dark mt-2'>
+          <code class='text-light'>
+            > genenotebook add annotation -u &lt;username&gt; -p &lt;password&gt; <br/>
+            -g &lt;genome_name&gt; &lt;annotation.gff3&gt;
+          </code>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="interproscan" role="tab-panel" 
+      aria-labelledby="nav-interproscan-tab">
+      <div style='max-width:700px; margin:auto'>
+        Adding InterProScan results:
+        <blockquote class='blockquote bg-dark mt-2'>
+          <code class='text-light'>
+          > genenotebook add interproscan
+          </code>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="tab-pane fade  mt-3 pb-3" id="orthogroups" role="tab-panel" 
+      aria-labelledby="nav-orthogroups-tab">
+      <div style='max-width:700px; margin:auto'>
+        Adding OrthoFinder results:
+        <blockquote class='blockquote bg-dark mt-2'>
+          <code class='text-light'>
+            > genenotebook add orthogroups
+          </code>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="tab-pane fade  mt-3 pb-3" id="gene-expression" role="tab-panel" 
+      aria-labelledby="nav-gene-expression-tab">
+      <div style='max-width:700px; margin:auto'>
+        Adding gene expression quantification (kallisto results):
+        <blockquote class='blockquote bg-dark mt-2'>
+          <code class='text-light'>
+            genenotebook add transcriptome
+          </code>
+        </blockquote>
+      </div>
+    </div>
+
+    <hr class="mb-0" />
+  </div>
+</section>
