@@ -1,14 +1,18 @@
 <section id='loading-data'>
   <h1 class='text-dark display-6 pt-2'>Loading data</h1>
   <p>
-    Once a GeneNoteBook server is running data can be added with the following commands:
+    Once a GeneNoteBook server is running data can be added through a command line interface.
+    <br/>
+    <small class='text-muted'>
+      For testing purposes a <a href='https://github.com/genenotebook/genenotebook/raw/dev/testdata.tgz'>test dataset</a> is available.
+    </small>
   </p>
   <nav>
     <div class="nav nav-tabs nav-fill px-5" id="nav-tab" role="tablist">
       <a class="nav-item nav-link active" id="nav-genome-tab" data-toggle="tab"
         href="#genome-annotations" role="tab" aria-controls="genome-annotations" 
         aria-selected="true">
-        Genome annotations
+        Genome / Annotation
       </a>
       <a class="nav-item nav-link" id="nav-interproscan-tab" data-toggle="tab"
         href="#interproscan" role="tab" aria-controls="interproscan" aria-selected="false">
@@ -42,9 +46,10 @@
         <blockquote class='blockquote bg-dark mt-2'>
           <code class='text-light'>
             > genenotebook add annotation -u &lt;username&gt; -p &lt;password&gt; <br/>
-            -g &lt;genome_name&gt; &lt;annotation.gff3&gt;
+            -n &lt;genome_name&gt; &lt;annotation.gff3&gt;
           </code>
         </blockquote>
+        <small class='text-muted'>To enable the BLAST search for the added annotation, browse to the admin settings and navigate to <i>'Genomes' --> 'Edit' --> 'Make Blast DB'.</i></small>
       </div>
     </div>
 
@@ -54,7 +59,8 @@
         Adding InterProScan results:
         <blockquote class='blockquote bg-dark mt-2'>
           <code class='text-light'>
-          > genenotebook add interproscan
+          > genenotebook add interproscan -u &lt;username&gt; -p &lt;password&gt; <br/>
+          &lt;InterProScan gff3 output file&gt;
           </code>
         </blockquote>
       </div>
@@ -66,7 +72,8 @@
         Adding OrthoFinder results:
         <blockquote class='blockquote bg-dark mt-2'>
           <code class='text-light'>
-            > genenotebook add orthogroups
+            > genenotebook add orthogroups -u &lt;username&gt; -p &lt;password&gt; <br/>
+              &lt;OrthoFinder results folder&gt;
           </code>
         </blockquote>
       </div>
@@ -78,7 +85,8 @@
         Adding gene expression quantification (kallisto results):
         <blockquote class='blockquote bg-dark mt-2'>
           <code class='text-light'>
-            genenotebook add transcriptome
+            genenotebook add transcriptome -u &lt;username&gt; -p &lt;password&gt; <br/>
+            &lt;Kallisto abundance.tsv file&gt;
           </code>
         </blockquote>
       </div>

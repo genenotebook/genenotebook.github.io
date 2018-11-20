@@ -1,11 +1,11 @@
 <section id="installation" class="bg-light">
   <h1 class='text-dark display-6 pt-2'>Installation</h1>
-  <p class="text-justify-center px-5">
+  <small class="text-justify-center text-muted">
     Genenotebook requires <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.mongodb.com/">MongoDB</a> and <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">NCBI BLAST</a> to run. <br/>
     By using either <a href="https://bioconda.github.io/#using-bioconda">bioconda</a> or <a href="https://docs.docker.com/get-started/">docker</a> these dependencies will be installed automatically. <br/>
     Alternatively, install these dependencies yourself and grab the <a href="https://github.com/genenotebook/genenotebook/releases/">GeneNoteBook tarball from GitHub</a>.
-  </p>
-  <nav>
+  </small>
+  <nav class='pt-2'>
     <div class="nav nav-tabs nav-fill px-5" id="nav-tab" role="tablist">
       <a class="nav-item nav-link active" id="nav-bioconda-tab" data-toggle="tab"
         href="#install-bioconda" role="tab" aria-controls="install-bioconda" 
@@ -77,7 +77,7 @@
           The currently available docker image is automatically generated from the bioconda installation
           <blockquote class='blockquote bg-dark mt-2'>
             <code class='text-light'>
-            > docker pull quay.io/biocontainers/genenotebook:0.1.4--h2d50403_1
+            > docker pull quay.io/biocontainers/genenotebook:0.1.8--h2d50403_0
             </code>
           </blockquote>
         </p>

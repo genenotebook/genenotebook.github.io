@@ -1,13 +1,14 @@
 <section id='running-a-server'>
   <h1 class='text-dark display-6 pt-2'>Running a server</h1>
   <p>
-    GeneNoteBook requires that a MongoDB daemon is running before starting.<br/>
-    To start a MongoDB daemon with default settings on port 27017 (this usually works fine):
-    <blockquote class='blockquote bg-white' style='max-width:700px; margin:auto'>
+    GeneNoteBook needs a running MongoDB daemon.<br/>
+    To start a MongoDB daemon with default settings on port 27017, using <code>&lt;data folder&gt;</code> as storage location:<br/>
+    <blockquote class='blockquote bg-white border' style='max-width:700px; margin:auto'>
       <code>
-        > mongod --fork --logpath mongod.log
+        > mongod --fork --dbpath &lt;data folder&gt; --logpath mongod.log
       </code>
     </blockquote>
+    <small class='text-muted'>Note: <code>&lt;data folder&gt;</code> must be an existing folder</small>
   </p>
   <nav>
     <div class="nav nav-tabs nav-fill px-5" id="nav-tab" role="tablist">
@@ -33,18 +34,18 @@
       aria-labelledby="nav-local-server-tab">
       <div style='max-width:700px; margin:auto'>
         To run a GeneNoteBook server with default settings:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 rounded'>
           <code class='text-light'>
             > genenotebook run
           </code>
         </blockquote>
         Alternatively, to run GeneNoteBook in the background:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 rounded'>
           <code class='text-light'>
-            > genenotebook run 2>&1 &
+            > genenotebook run 2>&1 genenotebook.log &
           </code>
         </blockquote>
-        This starts a GeneNoteBook server on the default port (3000) and adds a default admin user account. Check <code>http://localhost:3000</code> and log in with the default admin account (username: admin, password: admin).
+        <small class='text-muted'>This starts a GeneNoteBook server on the default port (3000) and adds a default admin user account. Check <code>http://localhost:3000</code> and log in with the default admin account (username: admin, password: admin).</small>
         <div class="alert alert-warning mt-4" role="alert">
           Immediately change the default password and/or username of the admin account! <br/>
           <code>http://localhost:3000/profile</code>
@@ -56,9 +57,9 @@
       aria-labelledby="nav-docker-tab">
       <div style='max-width:700px; margin:auto'>
         Running GeneNoteBook from the Docker container is similar to running a default installation:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 rounded'>
           <code class='text-light'>
-          > docker container run quay.io/biocontainers/genenotebook:0.1.4--h2d50403_1 genenotebook run
+          > docker container run quay.io/biocontainers/genenotebook:0.1.8--h2d50403_0 genenotebook run
           </code>
         </blockquote>
       </div>
@@ -68,7 +69,7 @@
       aria-labelledby="nav-apache-tab">
       <div style='max-width:700px; margin:auto'>
         To expose a running GeneNoteBook server to the web, the following apache configuration can be used.
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 rounded'>
           <code class='text-light'>
             [ APACHE CONFIG COMING SOON ]
           </code>
