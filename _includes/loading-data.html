@@ -36,20 +36,23 @@
       aria-labelledby="nav-genome-tab">
       <div style='max-width:700px; margin:auto'>
         First add the reference genome:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
             > genenotebook add genome -u &lt;username&gt; -p &lt;password&gt; <br/>
             -n &lt;genome_name&gt; &lt;genome.fasta&gt;
           </code>
         </blockquote>
         Then add the corresponding genome annotation:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
             > genenotebook add annotation -u &lt;username&gt; -p &lt;password&gt; <br/>
             -n &lt;genome_name&gt; &lt;annotation.gff3&gt;
           </code>
         </blockquote>
-        <small class='text-muted'>To enable the BLAST search for the added annotation, browse to the admin settings and navigate to <i>'Genomes' --> 'Edit' --> 'Make Blast DB'.</i></small>
+        <small class='text-muted'>
+          To enable the BLAST search for the added annotation, browse to the admin settings and navigate to <br/>
+          <i>Genomes &rarr; Edit &rarr; Make Blast DB</i>
+        </small>
       </div>
     </div>
 
@@ -57,7 +60,7 @@
       aria-labelledby="nav-interproscan-tab">
       <div style='max-width:700px; margin:auto'>
         Adding InterProScan results:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
           > genenotebook add interproscan -u &lt;username&gt; -p &lt;password&gt; <br/>
           &lt;InterProScan gff3 output file&gt;
@@ -70,7 +73,7 @@
       aria-labelledby="nav-orthogroups-tab">
       <div style='max-width:700px; margin:auto'>
         Adding OrthoFinder results:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
             > genenotebook add orthogroups -u &lt;username&gt; -p &lt;password&gt; <br/>
               &lt;OrthoFinder results folder&gt;
@@ -83,7 +86,7 @@
       aria-labelledby="nav-gene-expression-tab">
       <div style='max-width:700px; margin:auto'>
         Adding gene expression quantification (kallisto results):
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
             genenotebook add transcriptome -u &lt;username&gt; -p &lt;password&gt; <br/>
             &lt;Kallisto abundance.tsv file&gt;

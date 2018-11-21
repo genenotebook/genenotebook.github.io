@@ -2,7 +2,7 @@
   <h1 class='text-dark display-6 pt-2'>Installation</h1>
   <small class="text-justify-center text-muted">
     Genenotebook requires <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.mongodb.com/">MongoDB</a> and <a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">NCBI BLAST</a> to run. <br/>
-    By using either <a href="https://bioconda.github.io/#using-bioconda">bioconda</a> or <a href="https://docs.docker.com/get-started/">docker</a> these dependencies will be installed automatically. <br/>
+    By using either <a href="https://bioconda.github.io/#using-bioconda">bioconda</a> or <a href="https://docs.docker.com/get-started/">docker</a> these dependencies can be installed automatically. <br/>
     Alternatively, install these dependencies yourself and grab the <a href="https://github.com/genenotebook/genenotebook/releases/">GeneNoteBook tarball from GitHub</a>.
   </small>
   <nav class='pt-2'>
@@ -31,13 +31,13 @@
         <img alt="platforms" src="https://anaconda.org/bioconda/genenotebook/badges/platforms.svg">
         <hr/>
         By using the conda package management system GeneNoteBook and its dependencies can be installed as follows:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded font-weight-light'>
           <code class='text-light'>
             > conda install -c bioconda genenotebook
           </code>
         </blockquote>
         Alternatively, to isolate your installation from other packages, use a conda environment:
-        <blockquote class='blockquote bg-dark mt-2'>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
             > conda create -c bioconda -n gnb_env genenotebook
           </code>
@@ -47,26 +47,22 @@
     <div class="tab-pane fade  mt-3 pb-3" id="install-github" role="tab-panel" 
       aria-labelledby="nav-github-tab">
       <div style='max-width:700px; margin:auto'>
-        If you want to bundle GeneNoteBook from source code, or run a development server, you need Node.js (>= 8.0.0), MongoDB (>= 3.4.0) and NCBI BLAST (>= 2.5.0).
-        <blockquote class='blockquote bg-dark mt-2'>
+        If you want to bundle GeneNoteBook from source code, or run a development server, you need Node.js (>= 8.0.0), MongoDB (>= 3.4.0) and NCBI BLAST (>= 2.5.0). <br/>
+        Clone git repository
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
             > git clone https://github.com/genenotebook/genenotebook
-            <br/>
-            > npm install
           </code>
         </blockquote>
-        To bundle the source code:
-        <blockquote class='blockquote bg-dark mt-2'>
+        Bundle the source code
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
-            > npm run bundle
+            > npm run complete_build
           </code>
         </blockquote>
-        To run a development server:
-        <blockquote class='blockquote bg-dark mt-2'>
-          <code class='text-light'>
-            > npm run dev
-          </code>
-        </blockquote>
+        <small class='text-muted'>
+          To run a development server, first install javascript dependencies with <code>npm install</code style='white-space: nowrap'> and then start a server with <code style='white-space: nowrap'>npm run dev</code>
+        </small>
       </div>
     </div>
     <div class="tab-pane fade" id="install-docker" role="tab-panel" 
@@ -75,7 +71,7 @@
         <img alt="docker" src="https://quay.io/repository/biocontainers/genenotebook/status">
         <p>
           The currently available docker image is automatically generated from the bioconda installation
-          <blockquote class='blockquote bg-dark mt-2'>
+          <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
             <code class='text-light'>
             > docker pull quay.io/biocontainers/genenotebook:0.1.8--h2d50403_0
             </code>
