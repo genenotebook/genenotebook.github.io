@@ -59,7 +59,21 @@
         Running GeneNoteBook from the Docker container is similar to running a default installation:
         <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
-          > docker container run quay.io/biocontainers/genenotebook:0.1.8--h2d50403_0 genenotebook run
+          > docker container run genenotebook/genenotebook:v0.1.11 genenotebook run
+          </code>
+        </blockquote>
+        <small class='text-muted'>
+          This still requires that you have a MongoDB daemon running!
+        </small>
+        <hr/>
+        Alternatively, a <a href='https://docs.docker.com/engine/swarm/stack-deploy/'>Docker Stack</a> can be used to orchestrate both a GeneNoteBook container and a MongoDB container. <br/>
+        For this, you need the <code>docker-compose.yaml</code> file from the <a href='https://github.com/genenotebook/genenotebook_docker'> GeneNoteBook Docker Repository</a>
+        <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
+          <code class='text-light'>
+            > git clone https://github.com/genenotebook/genenotebook_docker
+            > cd genenotebook_docker
+            > docker swarm init
+            > docker stack deploy -c docker-compose.yaml genenotebook
           </code>
         </blockquote>
       </div>
