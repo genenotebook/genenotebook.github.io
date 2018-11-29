@@ -1,15 +1,5 @@
 <section id='running-a-server'>
   <h1 class='text-dark display-6 pt-2'>Running a server</h1>
-  <p>
-    GeneNoteBook needs a running MongoDB daemon.<br/>
-    To start a MongoDB daemon with default settings on port 27017, using <code>&lt;data folder&gt;</code> as storage location:<br/>
-    <blockquote class='blockquote bg-white border' style='max-width:700px; margin:auto'>
-      <code>
-        > mongod --fork --dbpath &lt;data folder&gt; --logpath mongod.log
-      </code>
-    </blockquote>
-    <small class='text-muted'>Note: <code>&lt;data folder&gt;</code> must be an existing folder</small>
-  </p>
   <nav>
     <div class="nav nav-tabs nav-fill px-5" id="nav-tab" role="tablist">
       <a class="nav-item nav-link active" id="nav-local-server-tab" data-toggle="tab"
@@ -45,7 +35,7 @@
             > genenotebook run 2>&1 > genenotebook.log &
           </code>
         </blockquote>
-        <small class='text-muted'>This starts a GeneNoteBook server on the default port (3000) and adds a default admin user account. Check <code>http://localhost:3000</code> and log in with the default admin account (username: admin, password: admin).</small>
+        <small class='text-muted'>This starts a MongoDB daemon on port 27017 and GeneNoteBook server on port 3000. Check <code>http://localhost:3000</code> and log in with the default admin account (username: admin, password: admin).</small>
         <div class="alert alert-warning mt-4" role="alert">
           Immediately change the default password and/or username of the admin account! <br/>
           <code>http://localhost:3000/profile</code>
@@ -59,12 +49,9 @@
         Running GeneNoteBook from the Docker container is similar to running a default installation:
         <blockquote class='blockquote bg-dark mt-2 py-1 rounded'>
           <code class='text-light'>
-          > docker container run genenotebook/genenotebook:v0.1.11 genenotebook run
+          > docker container run genenotebook/genenotebook:v0.1.12 genenotebook run
           </code>
         </blockquote>
-        <small class='text-muted'>
-          This still requires that you have a MongoDB daemon running!
-        </small>
         <hr/>
         Alternatively, a <a href='https://docs.docker.com/engine/swarm/stack-deploy/'>Docker Stack</a> can be used to orchestrate both a GeneNoteBook container and a MongoDB container. <br/>
         For this, you need the <code>docker-compose.yaml</code> file from the <a href='https://github.com/genenotebook/genenotebook_docker'> GeneNoteBook Docker Repository</a>
