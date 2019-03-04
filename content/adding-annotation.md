@@ -2,9 +2,10 @@
 section: 2. Adding data
 path: /documentation/adding-annotation
 title: Genome annotation
+order: 2
 ---
 ```
-genenotebook add annotation [options] <annotation gff file>
+genenotebook add annotation [options] <annotation GFF3 file>
 ```
 
 Open a connection to a running GeneNoteBook daemon and add a GFF formatted genome annotation to a previously loaded reference genome

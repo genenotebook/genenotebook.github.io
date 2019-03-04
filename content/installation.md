@@ -2,6 +2,7 @@
 path: /documentation/installation
 title: Installation
 section: 1. Running a GeneNoteBook server
+order: 1
 ---
 
 Bioconda

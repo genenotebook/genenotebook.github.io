@@ -2,6 +2,7 @@
 path: /documentation/starting-the-daemon
 title: Starting the GeneNoteBook daemon
 section: 1. Running a GeneNoteBook server
+order: 2
 ---
 
 ```

@@ -2,6 +2,7 @@
 section: 2. Adding data
 path: /documentation/adding-genome
 title: Genome sequence
+order: 1
 ---
 ```
 genenotebook add genome [options] <genome fasta file>

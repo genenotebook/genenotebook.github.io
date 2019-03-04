@@ -24,7 +24,9 @@ function SideBarNav({ allMarkdownRemark }){
           <p>{ section }</p>
           <ul>
             {
-              titles.map(({ title, path}) => {
+              titles.sort((a,b) => {
+                return a.order - b.order
+              }).map(({ title, path}) => {
                 return <li key={title}>
                   <Link to={path} className='has-text-link'>{ title }</Link>
                 </li>
