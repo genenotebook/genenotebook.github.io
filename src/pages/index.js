@@ -14,7 +14,7 @@ function OptionsWarning(){
     <button className='delete' aria-label='delete' onClick={() => setOpen(false)}/>
   </div>
   <div className='message-body'>
-    For additional information on for instance Docker containers, loading transcriptome data, or configuring user accounts, see the <Link to='/documentation' className='has-text-link'>full documentation</Link>.
+    For additional information on for instance Docker containers, loading transcriptome data, or configuring user accounts, see the <Link to='/documentation/installation' className='has-text-link'>full documentation</Link>.
   </div>
 </article>
 }

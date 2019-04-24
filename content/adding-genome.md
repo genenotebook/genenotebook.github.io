@@ -8,6 +8,8 @@ order: 1
 genenotebook add genome [options] <genome fasta file>
 ```
 
+<br/>
+
 Open a connection to a running GeneNoteBook daemon and add a DNA fasta formatted genome sequence
 
 <br/>

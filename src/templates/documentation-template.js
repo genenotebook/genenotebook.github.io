@@ -7,12 +7,12 @@ import SEO from '../components/seo'
 function SideBarNav({ allMarkdownRemark }){
   const { edges } = allMarkdownRemark;
 
-  const sectionTitles = edges.reduce((acc, { node, ...rest }) => {
-    const { section, title, path } = node.frontmatter;
+  const sectionTitles = edges.reduce((acc, { node }) => {
+    const { section, title, path, order } = node.frontmatter;
     if (!acc.hasOwnProperty(section)){
       acc[section] = []
     }
-    acc[section].push({ title, path })
+    acc[section].push({ title, path, order })
     return acc
   },{})
   
@@ -40,7 +40,7 @@ function SideBarNav({ allMarkdownRemark }){
 
 }
 
-export default function Template({ data, ...rest }){
+export default function Template({ data }){
   const { markdownRemark, allMarkdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   const { section, title } = frontmatter;
@@ -86,6 +86,7 @@ export const pageQuery = graphql`
             section
             title
             path
+            order
           }
         }
       }
