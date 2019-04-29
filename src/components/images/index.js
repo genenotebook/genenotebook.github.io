@@ -5,6 +5,7 @@ import ProteinDomainImage from './proteinDomainImage';
 import ExpressionImage from './expressionImage';
 import UserProfileImage from './userProfileImage';
 import VersionHistoryImage from './versionHistoryImage';
+import QueryImage from './queryImage.js';
 
 export {
     HeroImage,
@@ -14,4 +15,5 @@ export {
     ExpressionImage,
     UserProfileImage,
     VersionHistoryImage,
+    QueryImage,
 }

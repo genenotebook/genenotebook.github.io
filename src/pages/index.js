@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { Link } from 'gatsby'
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
 
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 import {
   HeroImage,
   GeneModelImage,
@@ -10,9 +10,11 @@ import {
   ExpressionImage,
   UserProfileImage,
   VersionHistoryImage,
-} from '../components/images'
-import SEO from '../components/seo'
-import CodeBlock from '../components/codeblock'
+  QueryImage,
+} from '../components/images';
+import SEO from '../components/seo';
+import CodeBlock from '../components/codeblock';
+import { Tile, TileWrapper } from '../components/tile';
 
 function OptionsWarning(){
   const [isOpen, setOpen] = useState(true)
@@ -31,7 +33,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO description="GeneNoteBook is a collaborative notebook for comparative genomics" title="GeneNoteBook Documentation" />
-      <section id='title' className='hero is-light'>
+      <section id='title' className='hero'>
         <div className='hero-body' style={{ padding: 24 }}>
           <div className='container has-text-centered'>
             <div className='title is-size-1 has-text-weight-light'>
@@ -47,7 +49,7 @@ function IndexPage() {
         </div>
       </section>
 
-      <section id='main-image' className='hero'>
+      <section id='main-image' className='hero is-light'>
         <div className='hero-body' style={{ padding: 24 }}>
           <div className='container'>
             <div className='box' style={{ margin: 'auto', maxWidth: 500, padding: 2 }}>
@@ -57,7 +59,7 @@ function IndexPage() {
         </div>
       </section>
 
-      <section id='getting-started' className='hero is-light'>
+      <section id='getting-started' className='hero'>
         <div className='hero-body' style={{ padding: 24 }}>
           <div className='container has-text-centered'>
             <div className='title is-size-2'>
@@ -86,76 +88,69 @@ function IndexPage() {
         </div>
       </section>
       
-      <section id='features' className='hero'>
+      <section id='features' className='hero is-light'>
         <div className='hero-body' style={{ padding: 24 }}>
           <div className='container has-text-centered'>
             <div className='title is-size-2'>
               Features
             </div>
 
-            <div className='tile is-ancestor'>
-              <div className='tile is-parent is-3'>
-                <article className='tile is-child box'>
-                  <p className='title is-4 has-text-weight-normal'>
-                    Gene models
-                  </p>
-                  <GeneModelImage />
-                  <p>
-                  Browse gene models
-                  </p>
-                </article>
-              </div>
+            <TileWrapper>
+              <Tile title="Gene Table" image={<HeroImage />} width={8}>
+                <p>
+                  Quickly scroll through all genes from multiple organisms and perform custom queries. The Gene Table allows for comparative visualization of Gene Models, Protein Domains and Gene Expression.
+                </p>
+              </Tile>
+              <Tile title="Custom queries" image={<QueryImage />}>
+                <p>
+                  Any gene attribute is automatically indexed to allow efficient queries.
+                  <br/>
+                  Query results can be saved in several canonical file formats like fasta for coding sequences, gff3 for genome annotations and tsv for gene expression levels.
+                </p>
+              </Tile>
+            </TileWrapper>
+             
+            <TileWrapper>
+              <Tile title="Gene Models" image={<GeneModelImage />}>
+                <p>
+                  Visualize the exon structure of predicted Gene Models. Explore predicted alternative splicing. 
+                </p>
+              </Tile>
 
-              <div className='tile is-parent is-3'>
-                <article className='tile is-child box'>
-                  <p className='title is-4 has-text-weight-normal'>
-                    Protein domains
-                  </p>
-                  <ProteinDomainImage />
-                </article>
-              </div>
+              <Tile title="Protein Domains" image={<ProteinDomainImage />} width={3}>
+                <p>
+                  Visualization of InterProScan predicted protein domains allows for quick assesment of putative protein function.
+                  <br/>
+                  Links to InterPro based on IDs.
+                </p>
+              </Tile>
 
-              <div className='tile is-parent is-6'>
-                <article className='tile is-child box'>
-                  <p className='title is-4 has-text-weight-normal'>
-                    Orthogroups
-                  </p>
-                  <OrthogroupImage />
-                </article>
-              </div>
+              <Tile title="Orthogroups" image={<OrthogroupImage />} width={5}>
+                <p>
+                  Orthogroup phylogenetic trees visualize evolutionary relationships between genes. Tree labels are hyperlinks to quickly navigate between members of an orthogroup.
+                </p>
+              </Tile>
+            </TileWrapper>
 
-            </div> {/* End of ancestor tile */}
-            <div className='tile is-ancestor'>
-              <div className='tile is-parent'>
-                <article className='tile is-child box'>
-                  <p className='title is-4 has-text-weight-normal'>
-                    Expression levels
-                  </p>
-                  <ExpressionImage />
-                </article>
-              </div>
+            <TileWrapper>
+              <Tile title="Expression levels" image={<ExpressionImage />} width={5}>
+                <p>
+                  Expression level barplots automatically display sample sizes of experiments, as well as error bars representing the standard error.
+                </p>
+              </Tile>
 
-              <div className='tile is-parent'>
-                <article className='tile is-child box'>
-                  <p className='title is-4 has-text-weight-normal'>
-                    User profiles
-                  </p>
-                  <UserProfileImage />
-                </article>
-              </div>
+              <Tile title="User profiles" image={<UserProfileImage />} width={3}>
+                <p>
+                  The user profile system allows for configuration of private access to data.
+                </p>
+              </Tile>
 
-              <div className='tile is-parent'>
-                <article className='tile is-child box'>
-                  <p className='title is-4 has-text-weight-normal'>
-                    Version history
-                  </p>
-                  <VersionHistoryImage />
-                </article>
-              </div>
-            </div>
-            
-
-
+              <Tile title="Version history" image={<VersionHistoryImage />}>
+                <p>
+                  Every manually changed annotation is tracked in a version history system, so that at any moment unwanted changes can be reverted.
+                </p>
+              </Tile>
+            </TileWrapper>
           </div>
         </div>
       </section>
