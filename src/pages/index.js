@@ -2,7 +2,15 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import { HeroImage, GeneModelImage, OrthogroupImage, ProteinDomainImage } from '../components/images'
+import {
+  HeroImage,
+  GeneModelImage,
+  OrthogroupImage,
+  ProteinDomainImage,
+  ExpressionImage,
+  UserProfileImage,
+  VersionHistoryImage,
+} from '../components/images'
 import SEO from '../components/seo'
 import CodeBlock from '../components/codeblock'
 
@@ -92,6 +100,9 @@ function IndexPage() {
                     Gene models
                   </p>
                   <GeneModelImage />
+                  <p>
+                  Browse gene models
+                  </p>
                 </article>
               </div>
 
@@ -120,6 +131,7 @@ function IndexPage() {
                   <p className='title is-4 has-text-weight-normal'>
                     Expression levels
                   </p>
+                  <ExpressionImage />
                 </article>
               </div>
 
@@ -128,6 +140,7 @@ function IndexPage() {
                   <p className='title is-4 has-text-weight-normal'>
                     User profiles
                   </p>
+                  <UserProfileImage />
                 </article>
               </div>
 
@@ -136,6 +149,7 @@ function IndexPage() {
                   <p className='title is-4 has-text-weight-normal'>
                     Version history
                   </p>
+                  <VersionHistoryImage />
                 </article>
               </div>
             </div>
