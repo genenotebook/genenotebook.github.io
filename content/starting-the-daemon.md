@@ -36,4 +36,36 @@ _Performance options_
 
 When working with large (eukaryotic) genomes, increase the memory available to genenotebook by using an environment variable: `NODE_OPTIONS="--max-old-space-size=8192"`
 
+_User accounts_
 
+Two default user accounts are created on first startup, `admin` and `guest`. You can customize this by creating a `settings.json` file in your working directory.
+
+The default `settings.json` looks like that:
+
+
+```
+{
+    "accounts": [
+        {
+            "username": "admin",
+            "email": "admin@admin.com",
+            "password": "admin",
+            "profile": {
+                "first_name": "admin",
+                "last_name": "admin"
+            },
+            "role": "admin"
+        },
+        {
+            "username": "guest",
+            "email": "guest@guest.com",
+            "password": "guest",
+            "profile": {
+                "first_name": "guest",
+                "last_name": "guest"
+            },
+            "role": "registered"
+        }
+    ]
+}
+```
